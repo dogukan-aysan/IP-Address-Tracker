@@ -1,5 +1,26 @@
 @import "./variables";
 ///////////////////////////////////////
+/// BASE
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--fsize-md);
+  font-weight: var(--fweight-sm);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+///////////////////////////////////////
 /// APP
 .app-container {
 }

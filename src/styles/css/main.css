@@ -31,4 +31,23 @@
   --radius-huge: 50rem;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 1rem 5rem rgba(0, 0, 0, 0.04);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--fsize-md);
+  font-weight: var(--fweight-sm);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }/*# sourceMappingURL=main.css.map */
