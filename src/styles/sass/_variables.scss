@@ -1,20 +1,28 @@
 :root {
+  // COLORS
   --color-very-dark-grey: hsl(0, 0%, 17%);
   --color-dark-grey: hsl(0, 0%, 59%);
+
   --color-white: #fff;
   --color-white-50: #fbfbfb;
   --color-white-150: #f4f4f4;
   --color-white-300: #e8e8e8;
   --color-white-500: #d9d9d9;
   --color-white-600: #aeaeae;
+
+  // TYPOGRAPHY
   --font-family: "Rubik", sans-serif;
+
   --fsize-tiny: 1rem;
   --fsize-sm: 1.4rem;
   --fsize-md: 1.8rem;
   --fsize-lg: 2.1rem;
+
   --fweight-sm: 400;
   --fweight-md: 500;
   --fweight-lg: 700;
+
+  // SPACING
   --desktop-width: 144rem;
   --mobile-width: 37.5rem;
   --spacing-tiny: 1rem;
@@ -24,11 +32,15 @@
   --spacing-lg: 20rem;
   --spacing-xxl: 35rem;
   --spacing-huge: 50rem;
+
+  // BORDER-RADIUS
   --radius-tiny: 0.6rem;
   --radius-sm: 2rem;
   --radius-md: 5rem;
   --radius-lg: 10rem;
   --radius-huge: 50rem;
+
+  // BOX SHADOW
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   --shadow-light: 0 1rem 5rem rgba(0, 0, 0, 0.04);
-}/*# sourceMappingURL=main.css.map */
+}
