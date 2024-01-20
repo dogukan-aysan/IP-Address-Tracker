@@ -7,6 +7,7 @@
   --color-white-300: #e8e8e8;
   --color-white-500: #d9d9d9;
   --color-white-600: #aeaeae;
+  --color-black: #000;
   --font-family: "Rubik", sans-serif;
   --fsize-tiny: 1rem;
   --fsize-sm: 1.4rem;
@@ -50,4 +51,104 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+.app-container {
+  width: var(--desktop-width);
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background-image: url("/public/images/pattern-bg-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__heading {
+  margin-top: var(--spacing-sm);
+  color: var(--color-white);
+}
+
+.searchbox {
+  width: 40%;
+  height: var(--spacing-regular);
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: calc(var(--radius-tiny) * 1.5);
+}
+.searchbox__input, .searchbox__icon {
+  cursor: pointer;
+}
+.searchbox__input {
+  font: inherit;
+  outline: none;
+  flex-basis: 90%;
+  padding-left: calc(var(--spacing-sm) * 0.8);
+  border: none;
+  border-radius: calc(var(--radius-tiny) * 1.5) 0 0 calc(var(--radius-tiny) * 1.5);
+}
+.searchbox__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 10%;
+  background-color: var(--color-black);
+  border-radius: 0 calc(var(--radius-tiny) * 1.5) calc(var(--radius-tiny) * 1.5) 0;
+}
+
+.overview {
+  position: absolute;
+  display: flex;
+  gap: var(--spacing-tiny);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 22%;
+  padding: calc(var(--spacing-regular) * 0.8) var(--spacing-sm);
+  background-color: var(--color-white);
+  border-radius: var(--radius-sm);
+  width: 75%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.info:not(:first-of-type) {
+  border-left: solid 1px var(--color-white-300);
+  padding-left: var(--spacing-sm);
+}
+.info:nth-of-type(2) {
+  margin: 0 var(--spacing-tiny) 0 calc(var(--spacing-sm) * 1.7);
+}
+.info:nth-of-type(3) {
+  margin: 0 calc(var(--spacing-regular) * 1.5) 0 0;
+  width: 16%;
+}
+.info__field {
+  position: relative;
+  bottom: calc(var(--spacing-tiny) * 0.6);
+  font-size: var(--spacing-tiny);
+  color: var(--color-white-600);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.info__value {
+  position: relative;
+  top: calc(var(--spacing-tiny) * 0.6);
+  font-weight: var(--fweight-md);
+  font-size: calc((var(--fsize-lg)) * 1.1);
+  width: 99%;
+}
+
+.map {
+  flex-basis: 70%;
+  background-color: aquamarine;
 }/*# sourceMappingURL=main.css.map */
