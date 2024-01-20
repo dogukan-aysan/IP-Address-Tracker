@@ -4,7 +4,7 @@ import Overview from "./Overview";
 
 function App() {
   return (
-    <main>
+    <main className="app-container">
       <Header />
       <Overview />
       <Map />

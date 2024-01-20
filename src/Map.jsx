@@ -1,5 +1,5 @@
 function Map() {
-  return <div>Map</div>;
+  return <div className="map">Map</div>;
 }
 
 export default Map;

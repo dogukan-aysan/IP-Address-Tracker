@@ -2,8 +2,8 @@ import SearchBox from "./SearchBox";
 
 function Header() {
   return (
-    <header>
-      <h1>IP Address Tracker</h1>
+    <header className="header">
+      <h1 className="header__heading">IP Address Tracker</h1>
       <SearchBox />
     </header>
   );
