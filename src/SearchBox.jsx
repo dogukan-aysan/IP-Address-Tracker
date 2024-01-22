@@ -1,14 +1,23 @@
 import { useForm } from "react-hook-form";
+import useIpAddress from "./hooks/useIpAddress";
+import { useState } from "react";
 
 function SearchBox() {
+  const [ip, setIp] = useState("");
+  const { isPending, error, data } = useIpAddress(ip);
+
   const {
     register,
     formState: { errors },
     handleSubmit,
+    getValues,
   } = useForm();
+
   const myHandleSubmit = () => {
-    alert("SUBMITTEDDD");
+    const { ip } = getValues();
+    setIp(ip);
   };
+
   return (
     <form className="searchbox" onSubmit={handleSubmit(myHandleSubmit)}>
       <input
