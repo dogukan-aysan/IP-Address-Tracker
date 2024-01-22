@@ -33,6 +33,7 @@ body {
 ///////////////////////////////////////
 /// HEADER
 .header {
+  position: relative;
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
@@ -71,8 +72,14 @@ body {
     align-items: center;
     flex-basis: 10%;
     background-color: var(--color-black);
+    border: none;
     border-radius: 0 calc(var(--radius-tiny) * 1.5)
       calc(var(--radius-tiny) * 1.5) 0;
+  }
+  &__error-message {
+    position: absolute;
+    top: 53%;
+    color: rgb(255, 104, 104);
   }
 }
 ///////////////////////////////////////
