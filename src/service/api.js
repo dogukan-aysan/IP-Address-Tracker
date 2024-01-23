@@ -1,7 +1,7 @@
 const API_KEY = "at_Iwws5YEiv8clIDCcaPCLnRgL7RH3c";
 
 const getApiResponse = async (ip) => {
-  const url = `https://geo.ipify.org/api/v2/country?apiKey=${API_KEY}&ipAddress=${ip}`;
+  const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ip}`;
   try {
     const res = await fetch(url);
     const data = await res.json();

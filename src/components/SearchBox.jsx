@@ -1,11 +1,9 @@
 import { useForm } from "react-hook-form";
-import useIpAddress from "./hooks/useIpAddress";
-import { useState } from "react";
+import { useContext } from "react";
+import { Context } from "../context/context";
 
 function SearchBox() {
-  const [ip, setIp] = useState("");
-  const { isPending, error, data } = useIpAddress(ip);
-
+  const { dispatch } = useContext(Context);
   const {
     register,
     formState: { errors },
@@ -15,7 +13,7 @@ function SearchBox() {
 
   const myHandleSubmit = () => {
     const { ip } = getValues();
-    setIp(ip);
+    dispatch({ type: "ip", payload: ip });
   };
 
   return (
