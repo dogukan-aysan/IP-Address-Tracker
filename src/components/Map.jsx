@@ -30,7 +30,12 @@ function Map() {
     );
   }, [dispatch, searchedPosition]);
 
-  if (isLoading) return <Loader />;
+  if (isLoading)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   if (error) return <Error />;
 
   return (

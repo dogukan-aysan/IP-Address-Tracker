@@ -7,6 +7,7 @@
   --color-white-300: #e8e8e8;
   --color-white-500: #d9d9d9;
   --color-white-600: #aeaeae;
+  --color-white-transparent: #aeaeaea2;
   --color-black: #000;
   --font-family: "Rubik", sans-serif;
   --fsize-tiny: 1rem;
@@ -122,6 +123,9 @@ body {
   background-color: var(--color-white);
   border-radius: var(--radius-sm);
   width: 75%;
+}
+.overview--loading {
+  background-color: var(--color-white-transparent);
 }
 
 .info {

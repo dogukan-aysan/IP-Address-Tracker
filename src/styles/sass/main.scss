@@ -95,6 +95,9 @@ body {
   background-color: var(--color-white);
   border-radius: var(--radius-sm);
   width: 75%;
+  &--loading {
+    background-color: var(--color-white-transparent);
+  }
 }
 .info {
   &:not(:first-of-type) {

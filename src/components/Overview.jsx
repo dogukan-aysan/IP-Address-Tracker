@@ -18,7 +18,12 @@ function Overview() {
     }
   }, [dispatch, data]);
 
-  if (isPending) return <Loader />;
+  if (isPending)
+    return (
+      <div className="overview overview--loading">
+        <Loader />
+      </div>
+    );
   if (error) return <Error />;
 
   const {
