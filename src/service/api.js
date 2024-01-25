@@ -1,4 +1,4 @@
-const API_KEY = "at_Iwws5YEiv8clIDCcaPCLnRgL7RH3c";
+const API_KEY = "at_xADHR5l4eGE1QQRmNTkGeqpv6hhqT";
 
 const getApiResponse = async (ip) => {
   const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${ip}`;
