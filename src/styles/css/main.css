@@ -285,4 +285,7 @@ body {
   flex-basis: 70%;
   background-color: aquamarine;
   z-index: -1;
+}
+.map--loading {
+  background-color: var(--color-white-transparent);
 }/*# sourceMappingURL=main.css.map */

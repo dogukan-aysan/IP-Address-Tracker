@@ -32,7 +32,7 @@ function Map() {
 
   if (isLoading)
     return (
-      <div>
+      <div className="map map--loading">
         <Loader />
       </div>
     );

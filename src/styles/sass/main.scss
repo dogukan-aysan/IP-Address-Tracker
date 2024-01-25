@@ -216,4 +216,7 @@ body {
   flex-basis: 70%;
   background-color: aquamarine;
   z-index: -1;
+  &--loading {
+    background-color: var(--color-white-transparent);
+  }
 }
