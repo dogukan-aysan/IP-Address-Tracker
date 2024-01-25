@@ -39,7 +39,7 @@ function SearchBox() {
       }
 
       <button type="submit" className="searchbox__icon-container">
-        <img className="searchbox__icon" src="images/icon-arrow.svg" />
+        <img className="searchbox__icon" src="/icon-arrow.svg" />
       </button>
     </form>
   );

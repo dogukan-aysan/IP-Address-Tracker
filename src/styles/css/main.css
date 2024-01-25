@@ -76,7 +76,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-sm);
-  background-image: url("/images/pattern-bg-desktop.png");
+  background-image: url("/pattern-bg-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
